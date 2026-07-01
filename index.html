@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AURELIA — Премиальный кофе</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__container">
+        <div class="hero__decor" aria-hidden="true">
+          <span
+            class="hero__blob"
+            style="
+              --blob-size: 460px;
+              --blob-x: -160px;
+              --blob-y: -140px;
+              --blob-hue: 32;
+            "
+          ></span>
+          <span
+            class="hero__blob"
+            style="
+              --blob-size: 320px;
+              --blob-x: 680px;
+              --blob-y: 40px;
+              --blob-hue: 28;
+            "
+          ></span>
+        </div>
+
+        <header class="hero__header">
+          <a href="#" class="hero__logo" aria-label="AURELIA — на главную">
+            <span class="hero__logo-icon" aria-hidden="true">☕</span>
+            <span class="hero__logo-text">AURELIA</span>
+          </a>
+
+          <nav class="hero__nav" aria-label="Основная навигация">
+            <ul class="hero__nav-list">
+              <li class="hero__nav-item">
+                <a class="hero__nav-link" href="#catalog">Каталог</a>
+              </li>
+              <li class="hero__nav-item">
+                <a class="hero__nav-link" href="#about">О нас</a>
+              </li>
+              <li class="hero__nav-item">
+                <a class="hero__nav-link" href="#roasting">Обжарка</a>
+              </li>
+              <li class="hero__nav-item">
+                <a class="hero__nav-link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="hero__header-actions">
+            <button
+              class="hero__icon-btn"
+              type="button"
+              aria-label="Поиск по каталогу"
+            >
+              <svg
+                class="hero__icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <circle
+                  cx="11"
+                  cy="11"
+                  r="7"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <line
+                  x1="21"
+                  y1="21"
+                  x2="16.65"
+                  y2="16.65"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <button
+              class="hero__icon-btn hero__icon-btn--cart"
+              type="button"
+              aria-label="Корзина, 3 товара"
+            >
+              <svg
+                class="hero__icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M4 6h2l1.6 9.6a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.6L21 8H6"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle cx="10" cy="20" r="1.4" fill="currentColor" />
+                <circle cx="17" cy="20" r="1.4" fill="currentColor" />
+              </svg>
+              <span class="hero__cart-count">3</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="hero__content">
+          <div class="hero__text">
+            <p class="hero__badge">
+              <span class="hero__badge-dot" aria-hidden="true"></span>
+              Свежая обжарка каждую неделю
+            </p>
+
+            <h1 class="hero__title" id="hero-title">
+              Кофе, который<br />
+              <span class="hero__title-accent">рассказывает историю</span>
+            </h1>
+
+            <p class="hero__description">
+              Отбираем зёрна специальной категории у фермеров Эфиопии, Колумбии
+              и Суматры, обжариваем небольшими партиями и доставляем свежим в
+              течение 48 часов после обжарки.
+            </p>
+
+            <div class="hero__actions">
+              <a class="hero__btn hero__btn--primary" href="#catalog">
+                Смотреть каталог
+                <svg
+                  class="hero__btn-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M5 12h14M13 6l6 6-6 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a class="hero__btn hero__btn--secondary" href="#roasting"
+                >Как мы обжариваем</a
+              >
+            </div>
+
+            <dl class="hero__stats">
+              <div class="hero__stat">
+                <dt class="hero__stat-label">Сортов кофе</dt>
+                <dd class="hero__stat-value">32+</dd>
+              </div>
+              <div class="hero__stat">
+                <dt class="hero__stat-label">Довольных клиентов</dt>
+                <dd class="hero__stat-value">14 000+</dd>
+              </div>
+              <div class="hero__stat">
+                <dt class="hero__stat-label">Средняя оценка</dt>
+                <dd class="hero__stat-value">4.9 ★</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div
+            class="hero__showcase"
+            role="list"
+            aria-label="Популярные товары"
+          >
+            <article
+              class="hero__card hero__card--featured"
+              role="listitem"
+              style="--item-index: 0; --hue: 28"
+            >
+              <span class="hero__card-badge hero__card-badge--bestseller"
+                >Бестселлер</span
+              >
+              <div
+                class="hero__card-image-wrap"
+                role="img"
+                aria-label="Пачка кофе Ethiopia Yirgacheffe на тёмном фоне с рассыпанными зёрнами"
+              >
+                <img src="./public/ethiopia-min.png" alt="Ethiopia Yirgacheffe">
+              </div>
+              <div class="hero__card-body">
+                <h2 class="hero__card-title">Ethiopia Yirgacheffe</h2>
+                <p class="hero__card-desc">
+                  Цветочные ноты жасмина, бергамот и лёгкая цитрусовая кислинка.
+                </p>
+                <div class="hero__card-footer">
+                  <p class="hero__card-price">
+                    <span class="hero__card-price-current">1 190 ₽</span>
+                  </p>
+                  <button
+                    class="hero__card-btn"
+                    type="button"
+                    aria-label="Добавить Ethiopia Yirgacheffe в корзину"
+                  >
+                    <svg
+                      class="hero__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 5v14M5 12h14"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="hero__card"
+              role="listitem"
+              style="--item-index: 1; --hue: 150"
+            >
+              <span class="hero__card-badge hero__card-badge--new"
+                >Новинка</span
+              >
+              <div
+                class="hero__card-image-wrap"
+                role="img"
+                aria-label="Пачка кофе Colombia Supremo рядом с керамической чашкой"
+              >
+                <img src="./public/colombia.webp" alt="Colombia Supremo">
+              </div>
+              <div class="hero__card-body">
+                <h2 class="hero__card-title">Colombia Supremo</h2>
+                <p class="hero__card-desc">
+                  Карамель, орех пекан и мягкое шоколадное послевкусие.
+                </p>
+                <div class="hero__card-footer">
+                  <p class="hero__card-price">
+                    <span class="hero__card-price-current">990 ₽</span>
+                  </p>
+                  <button
+                    class="hero__card-btn"
+                    type="button"
+                    aria-label="Добавить Colombia Supremo в корзину"
+                  >
+                    <svg
+                      class="hero__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 5v14M5 12h14"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="hero__card"
+              role="listitem"
+              style="--item-index: 2; --hue: 10"
+            >
+              <span class="hero__card-badge hero__card-badge--sale">−15%</span>
+              <div
+                class="hero__card-image-wrap"
+                role="img"
+                aria-label="Пачка кофе Sumatra Mandheling с рассыпанными зёрнами"
+              >
+                <img src="./public/sumatra.png" alt="Sumatra Mandheling">
+              </div>
+              <div class="hero__card-body">
+                <h2 class="hero__card-title">Sumatra Mandheling</h2>
+                <p class="hero__card-desc">
+                  Плотное тело, ноты тёмного шоколада и лесных трав.
+                </p>
+                <div class="hero__card-footer">
+                  <p class="hero__card-price">
+                    <span class="hero__card-price-old">1 290 ₽</span>
+                    <span class="hero__card-price-current">1 090 ₽</span>
+                  </p>
+                  <button
+                    class="hero__card-btn"
+                    type="button"
+                    aria-label="Добавить Sumatra Mandheling в корзину"
+                  >
+                    <svg
+                      class="hero__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 5v14M5 12h14"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <a
+          class="hero__scroll-hint"
+          href="#catalog"
+          aria-label="Прокрутить к каталогу товаров"
+        >
+          <span class="hero__scroll-hint-text">Прокрутить</span>
+          <span class="hero__scroll-hint-line" aria-hidden="true"></span>
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
